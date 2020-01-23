@@ -1,9 +1,11 @@
 import React from "react";
-
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-import "../css/base.css";
+import TodoAppEntryPoint from "../components/todos/index";
+import ReactReduxTypeScriptCrud from "../components/react-redux-typescript-crud/index";
 
+import "../css/base.css";
+import "../css/bootstrap.min.css";
 const App = () => {
   return (
     <div>
@@ -15,7 +17,7 @@ const App = () => {
                 <Link to="/">To-Do-App</Link>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <Link to="/react-redux-ts-crud">react-redux-ts-crud</Link>
               </li>
               <li>
                 <Link to="/dashboard">Dashboard</Link>
@@ -24,13 +26,12 @@ const App = () => {
           </nav>
         </header>
         <main>
-          <hr />
           <Switch>
             <Route exact path="/">
-              <Home />
+              <TodoAppEntryPoint />
             </Route>
-            <Route path="/about">
-              <About />
+            <Route path="/react-redux-ts-crud">
+              <ReactReduxTypeScriptCrud />
             </Route>
             <Route path="/dashboard">
               <Dashboard />
@@ -41,14 +42,6 @@ const App = () => {
     </div>
   );
 };
-
-function Home() {
-  return (
-    <div style={{ backgroundColor: "red" }}>
-      <h2>Home</h2>
-    </div>
-  );
-}
 
 function About() {
   return (

@@ -10,10 +10,6 @@ body {
   padding: 30px;
 }
 
-main {
-  color: white;
-}
-
 header {
   background-color: white;
   position: fixed;
@@ -29,7 +25,9 @@ header {
 header * {
   display: inline;
 }
-
+main {
+  margin-top: 60px;
+}
 header li {
   margin: 20px;
 }
