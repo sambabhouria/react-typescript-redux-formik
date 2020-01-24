@@ -2,6 +2,8 @@ import React from "react";
 import { Provider } from "react-redux";
 import { store, RootState } from "../../store";
 
+import App from "./app";
+
 import Tabs from "../tabs/tabs";
 
 const ReactReduxTypeScriptCrud = () => {
@@ -34,7 +36,9 @@ const ReactReduxTypeScriptCrud = () => {
           </ul>
         </div>
 
-        <div id="Exemple Here">fsgfgsfdg</div>
+        <div id="Exemple Here">
+          <App />
+        </div>
       </Tabs>
     </Provider>
   );
