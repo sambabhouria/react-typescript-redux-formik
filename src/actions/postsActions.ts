@@ -2,7 +2,7 @@ import posts from "../api";
 import { ThunkAction } from "redux-thunk";
 import { Dispatch } from "redux";
 import { RootState, RootActions } from "../store";
-import { Post, Posts } from "../reducers/postsReducer";
+import { Post, Posts } from "../reducers/posts-reducer";
 import { AxiosResponse } from "axios";
 import history from "../history";
 
