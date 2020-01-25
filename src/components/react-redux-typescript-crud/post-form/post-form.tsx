@@ -1,5 +1,5 @@
 import React from "react";
-import { Field, FieldProps, Formik, FormikErrors, FormikProps } from "formik";
+import { Field, FieldProps, Formik, FormikProps } from "formik";
 import { object, string } from "yup";
 import TextField from "../text-field/text-field";
 import { Post } from "../../../reducers/posts-reducer";
@@ -50,7 +50,11 @@ export const PostForm: React.FunctionComponent<OwnPostFormProps> = props => {
               <label htmlFor="author">Author</label>
               <Field type="text" name="author" placeholder="Author" />
             </div>
-            <button className="ui button" type="submit">
+            <button
+              type="submit"
+              style={{ marginRight: "10px", width: "100px" }}
+              className="btn btn-primary"
+            >
               Submit
             </button>
           </form>

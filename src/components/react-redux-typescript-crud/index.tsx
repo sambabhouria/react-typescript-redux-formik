@@ -10,7 +10,7 @@ const ReactReduxTypeScriptCrud = () => {
   return (
     <Provider store={store}>
       <Tabs>
-        <div id="Table of Contents">
+        <div id="Content items in this page">
           <h1>ts-react-redux-crud</h1>
           <p>
             Example of how to build CRUD (blog app) using React Redux and
@@ -35,8 +35,7 @@ const ReactReduxTypeScriptCrud = () => {
             </li>
           </ul>
         </div>
-
-        <div id="Exemple Here">
+        <div id="Create-Read-Update-Delete">
           <App />
         </div>
       </Tabs>

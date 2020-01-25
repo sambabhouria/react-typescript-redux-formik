@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-
+import { withRouter } from "react-router-dom";
 import Tab from "./tab";
 import "./tab.css";
 
@@ -55,4 +55,4 @@ class Tabs extends Component {
   }
 }
 
-export default Tabs;
+export default withRouter(Tabs);

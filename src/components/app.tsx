@@ -43,14 +43,6 @@ const App = () => {
   );
 };
 
-function About() {
-  return (
-    <div style={{ backgroundColor: "red" }}>
-      <h2>About</h2>
-    </div>
-  );
-}
-
 function Dashboard() {
   return (
     <div>

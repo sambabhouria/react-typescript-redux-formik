@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import _ from "lodash";
 import { connect } from "react-redux";
 import PostsListItem from "../../components/react-redux-typescript-crud/posts-list-item";
-import { fetchPosts } from "../../actions/postsActions";
+import { fetchPosts } from "../../actions/posts-actions";
 import { RootState } from "../../store";
 import { Post } from "../../reducers/posts-reducer";
 

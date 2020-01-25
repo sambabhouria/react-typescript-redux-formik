@@ -23,26 +23,20 @@ const PostsListItem = ({ post }: PostListItemProps) => (
       </div>
       <div className="extra">Author: {post.author}</div>
       <div>
-        <button
-          style={{ marginRight: "10px", width: "100px" }}
-          type="button"
+        <Link
+          to={"/posts/edit/" + post.id}
           className="btn btn-primary"
+          style={{ marginRight: "10px", width: "100px" }}
         >
           Edit
-        </button>
-        <button
-          type="button"
+        </Link>
+        <Link
+          to={"/posts/delete/" + post.id}
           className="btn btn-danger"
           style={{ width: "100px" }}
         >
           Delete
-        </button>
-        {/* <Link to={"/posts/edit/" + post.id} className="ui green basic button">
-          Edit
         </Link>
-        <Link to={"/posts/delete/" + post.id} className="ui red basic button">
-          Delete
-        </Link> */}
       </div>
     </div>
   </div>

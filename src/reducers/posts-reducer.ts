@@ -1,5 +1,5 @@
 import _ from "lodash";
-import { PostsAction, PostsActionTypes } from "../actions/postsActions";
+import { PostsAction, PostsActionTypes } from "../actions/posts-actions";
 import { Reducer } from "redux";
 
 export interface Post {
