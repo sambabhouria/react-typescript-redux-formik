@@ -40,15 +40,26 @@ export const PostForm: React.FunctionComponent<OwnPostFormProps> = props => {
         })}
         render={({ touched, handleSubmit }: FormikProps<FormValues>) => (
           <form onSubmit={handleSubmit} className="ui form">
-            <Field
-              name="title"
-              render={(innerProps: OwnInnerFieldProps) => (
-                <TextField {...innerProps} title="Title" />
-              )}
-            />
-            <div className="field">
-              <label htmlFor="author">Author</label>
-              <Field type="text" name="author" placeholder="Author" />
+            <div className="form-group ">
+              <Field
+                name="title"
+                render={(innerProps: OwnInnerFieldProps) => (
+                  <TextField {...innerProps} title="Title" />
+                )}
+              />
+            </div>
+            <div className="form-group ">
+              <label htmlFor="authors" className="col-sm-2 col-form-label">
+                Author
+              </label>
+              <div className="col-sm-10">
+                <Field
+                  type="text"
+                  name="author"
+                  placeholder="Author"
+                  className="form-control"
+                />
+              </div>
             </div>
             <button
               type="submit"

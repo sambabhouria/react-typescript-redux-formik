@@ -6,7 +6,6 @@ import PostsNew from "../../containers/posts-new";
 const App = () => {
   useEffect(() => {
     history.push("/react-redux-ts-crud");
-    alert("user effect called");
   }, []);
 
   return (

@@ -12,9 +12,17 @@ const TextField: React.FunctionComponent<OwnInnerFieldProps> = ({
   }`;
   return (
     <div className={className}>
-      <label htmlFor="title">Title</label>
-      <Field type="text" name="title" placeholder="Title" />
-
+      <label htmlFor="title" className="col-sm-2 col-form-label">
+        Title
+      </label>
+      <div className="col-sm-10">
+        <Field
+          type="text"
+          name="title"
+          placeholder="Title"
+          className="form-control"
+        />
+      </div>
       {form.touched.title && form.errors.title ? (
         <div className="ui pointing red basic label">{form.errors.title}</div>
       ) : null}
