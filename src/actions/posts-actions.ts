@@ -149,7 +149,7 @@ const handleAddPostSuccess = (
   response: Post
 ) => {
   dispatch({ type: PostsActionTypes.ADD_POST_SUCCESS, payload: response });
-  history.push("/");
+  history.push("/react-redux-ts-crud");
 };
 
 const handleAddPostFail = (dispatch: Dispatch<AddPostFail>) => {
@@ -195,7 +195,7 @@ const handleEditPostSuccess = (
   editedPost: Post
 ) => {
   dispatch({ type: PostsActionTypes.EDIT_POST_SUCCESS, payload: editedPost });
-  history.push("/");
+  history.push("/react-redux-ts-crud");
 };
 
 const handleEditPostFail = (dispatch: Dispatch<EditPostFail>) => {
@@ -227,7 +227,7 @@ export const deletePost = (
       type: PostsActionTypes.DELETE_POST_SUCCESS,
       payload: deletedId
     });
-    history.push("/");
+    history.push("/react-redux-ts-crud");
   } catch (e) {
     dispatch({ type: PostsActionTypes.DELETE_POST_FAIL });
   }

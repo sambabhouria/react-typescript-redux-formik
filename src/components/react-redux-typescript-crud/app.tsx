@@ -3,6 +3,7 @@ import { Router, Route, Switch, Link } from "react-router-dom";
 import history from "../../history";
 import PostsList from "../../containers/posts-list";
 import PostsNew from "../../containers/posts-new";
+
 const App = () => {
   useEffect(() => {
     history.push("/react-redux-ts-crud");

@@ -31,7 +31,7 @@ class PostDelete extends React.Component<PostDeleteProps> {
                 >
                     Delete
                 </button>
-                <Link to="/" className="ui button">
+                <Link to="/react-redux-ts-crud" className="ui button">
                     Cancel
                 </Link>
             </React.Fragment>
@@ -57,7 +57,7 @@ class PostDelete extends React.Component<PostDeleteProps> {
                 title="Delete Post"
                 content={this.renderContent()}
                 actions={this.renderActions()}
-                onDismiss={() => history.push('/')}
+                onDismiss={() => history.push('/react-redux-ts-crud')}
             />
         );
     }
