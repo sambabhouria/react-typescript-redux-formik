@@ -1,11 +1,6 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    },
-    {
       "title": "Rendez-vous",
       "author": "Samba",
       "id": 95958
@@ -22,7 +17,7 @@
     },
     {
       "title": "Sport",
-      "author": "Anonymous",
+      "author": "sambabhouria",
       "id": 79214
     },
     {
@@ -31,13 +26,7 @@
       "id": 21127
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
+  "comments": [],
   "profile": {
     "name": "typicode"
   },

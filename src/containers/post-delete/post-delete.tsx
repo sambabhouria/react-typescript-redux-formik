@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React , { Fragment }  from 'react';
 import { connect } from 'react-redux';
 import { RootState } from '../../store';
 import { RouteComponentProps } from 'react-router';
@@ -24,17 +24,20 @@ class PostDelete extends React.Component<PostDeleteProps> {
     renderActions() {
         const { id } = this.props.match.params;
         return (
-            <React.Fragment>
+            <Fragment>
+
+               <Link to="/react-redux-ts-crud" className="btn btn-secondary" style={{ marginRight: '10px'}}>
+                    Cancel
+                </Link>
+
                 <button
                     onClick={() => this.props.deletePost(Number(id))}
-                    className="ui button negative"
+                    className="btn btn-danger"
                 >
                     Delete
                 </button>
-                <Link to="/react-redux-ts-crud" className="ui button">
-                    Cancel
-                </Link>
-            </React.Fragment>
+               
+            </Fragment>
         );
     }
 
@@ -53,6 +56,7 @@ class PostDelete extends React.Component<PostDeleteProps> {
 
     render() {
         return (
+            
             <Modal
                 title="Delete Post"
                 content={this.renderContent()}

@@ -1,18 +1,26 @@
-import React, { ReactPortal } from "react";
-import ReactDOM from "react-dom";
-
+import React, { ReactPortal } from 'react';
+import ReactDOM from 'react-dom';
+import './modal.css'
 export const Modal = (props: any): ReactPortal => {
-  return ReactDOM.createPortal(
-    <div onClick={props.onDismiss} className="ui dimmer modals visible active">
-      <div
-        onClick={e => e.stopPropagation()}
-        className="ui standard modal visible active"
-      >
-        <div className="header">{props.title}</div>
-        <div className="content">{props.content}</div>
-        <div className="actions">{props.actions}</div>
-      </div>
-    </div>,
-    document.querySelector("#modal") as HTMLElement
-  );
+
+    return ReactDOM.createPortal(
+        <div
+            onClick={props.onDismiss}
+            className="myModal"
+        > 
+             {/* <div
+                onClick={e => e.stopPropagation()}
+                className="ui standard modal visible active"
+            > */}
+             <button onClick={props.onDismiss} className='modal__close'>&times;</button>
+              <div onClick={e => e.stopPropagation()} >
+                  <div className="mymodal-title">{props.title}</div>
+                  <div className="mymodal-content">{props.content}</div>
+                  <div className="mymodal-footer">{props.actions}</div>
+              </div>
+        </div>,
+        document.querySelector('#modal') as HTMLElement
+    );
 };
+
+

@@ -1,0 +1,76 @@
+
+  button {
+    padding: 8px 16px;
+    border-radius: 4px;
+  }
+  .myModal {
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+    opacity: 1;
+    position: fixed;
+    top: 20%;
+    left: 10%;
+    animation: show 0.25s ease forwards;
+    z-index: 1072;
+    background: #fafafa;
+    padding: 1rem;
+    min-height: 200px;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal__close {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    
+  }
+  .mymodal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid #e9ecef;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+}
+
+.mymodal-footer {
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    padding: 1rem;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    border-top: 1px solid #e9ecef;
+}
+.mymodal-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+}
+
+.mymodal-content {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1rem;
+}
+  
