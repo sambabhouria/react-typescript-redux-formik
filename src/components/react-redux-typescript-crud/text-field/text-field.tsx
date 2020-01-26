@@ -1,5 +1,5 @@
 import React from "react";
-import { Field, FieldProps } from "formik";
+import { Field } from "formik";
 import { OwnInnerFieldProps } from "../post-form/post-form";
 
 const TextField: React.FunctionComponent<OwnInnerFieldProps> = ({
