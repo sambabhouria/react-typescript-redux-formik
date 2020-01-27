@@ -1,6 +1,9 @@
 import React, { useState, FormEvent, ChangeEvent } from "react";
 import TodoList from "./todo-list";
 import TodoForm from "./ todo-form";
+
+import {TodoReduxTypeScript}  from  "./todo-redux-typescript-index";
+
 import { Todo } from "../../interfaces/todos/todo";
 
 import Tabs from "../tabs/tabs";
@@ -31,7 +34,7 @@ const TodoAppEntryPoint = () => {
     <div>
       <Tabs>
         <div id="Table of Contents">
-          <span>In this frist tutorial we will discuss about</span>
+          {/* <span>In this frist tutorial we will discuss about</span>
           <ul>
             <li>Creating your first interface</li>
             <li>A to-do list, you know, to render to-do's</li>
@@ -40,16 +43,17 @@ const TodoAppEntryPoint = () => {
               A form to create a new to-do(A submit button,An input to write our
               to-do in )
             </li>
-          </ul>
+          </ul> */}
         </div>
 
         <div id="Exemple Here">
-          <TodoList todos={todos} />
+          <TodoReduxTypeScript />
+          {/* <TodoList todos={todos} />
           <TodoForm
             onSubmit={handleSubmit}
             onInputChange={handleChange}
             inputValue={todoValue}
-          />
+          /> */}
         </div>
       </Tabs>
     </div>

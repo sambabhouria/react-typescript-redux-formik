@@ -19,7 +19,7 @@ export interface PostsState {
 }
 
 const initialState = {
-  items: {},
+  items : {},
   loading: false,
   error: null
 };

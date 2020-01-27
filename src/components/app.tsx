@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-import TodoAppEntryPoint from "../components/todos/index";
+import TodoAppEntryPoint from "../components/todos-redux-typescript/index";
 import ReactReduxTypeScriptCrud from "../components/react-redux-typescript-crud/index";
 
 import "../css/base.css";

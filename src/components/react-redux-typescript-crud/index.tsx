@@ -1,6 +1,6 @@
 import React from "react";
-import { Provider } from "react-redux";
-import { store } from "../../store";
+//import { Provider } from "react-redux";
+//import { store } from "../../store";
 
 import App from "./app";
 
@@ -8,7 +8,7 @@ import Tabs from "../tabs/tabs";
 
 const ReactReduxTypeScriptCrud = () => {
   return (
-    <Provider store={store}>
+   // <Provider store={store}>
       <Tabs>
       <div id="Create-Read-Update-Delete">
           <App />
@@ -40,7 +40,7 @@ const ReactReduxTypeScriptCrud = () => {
           </ul>
         </div>
       </Tabs>
-    </Provider>
+    //</Provider>
   );
 };
 
