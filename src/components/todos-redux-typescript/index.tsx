@@ -2,7 +2,7 @@ import React, { useState, FormEvent, ChangeEvent } from "react";
 import TodoList from "./todo-list";
 import TodoForm from "./ todo-form";
 
-import {TodoReduxTypeScript}  from  "./todo-redux-typescript-index";
+import { TodoReduxTypeScript } from "./todo-redux-typescript-index";
 
 import { Todo } from "../../interfaces/todos/todo";
 
@@ -33,27 +33,30 @@ const TodoAppEntryPoint = () => {
   return (
     <div>
       <Tabs>
-        <div id="Table of Contents">
-          {/* <span>In this frist tutorial we will discuss about</span>
-          <ul>
-            <li>Creating your first interface</li>
-            <li>A to-do list, you know, to render to-do's</li>
-            <li>A to-do component, this will represent one to-do</li>
-            <li>
-              A form to create a new to-do(A submit button,An input to write our
-              to-do in )
-            </li>
-          </ul> */}
+        <div id="React-Redux-TypeScript-Todo">
+          <TodoReduxTypeScript />
         </div>
 
-        <div id="Exemple Here">
-          <TodoReduxTypeScript />
-          {/* <TodoList todos={todos} />
-          <TodoForm
-            onSubmit={handleSubmit}
-            onInputChange={handleChange}
-            inputValue={todoValue}
-          /> */}
+        <div id="Discussions in this tutorial">
+          <span>React-Redux with TypeScript</span> <br />
+          <span>
+            typeScript is a typed superset of JavaScript. It has become popular
+            recently in applications due to the benefits it can bring.
+          </span>
+          <br />
+          <span style={{ color: "red" }}>What are we gonna build?</span>
+          <br />
+          <span>
+            We’ll build the infamous to-do list application with
+            typescript-react-redux
+          </span>
+          <br />
+          <span> The features that this application will support are:</span>
+          <br />
+          <ul>
+            <li>1.Add a new item to a list.</li>
+            <li>2.Remove an item from the list.</li>
+          </ul>
         </div>
       </Tabs>
     </div>

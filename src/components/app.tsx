@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import TodoAppEntryPoint from "../components/todos-redux-typescript/index";
 import ReactReduxTypeScriptCrud from "../components/react-redux-typescript-crud/index";
+import { FormikEntryPoint } from "../components/formik/index";
 
 import "../css/base.css";
 import "../css/bootstrap.min.css";
@@ -20,7 +21,7 @@ const App = () => {
                 <Link to="/react-redux-ts-crud">react-redux-ts-crud</Link>
               </li>
               <li>
-                <Link to="/dashboard">Dashboard</Link>
+                <Link to="/formik">Formik</Link>
               </li>
             </ul>
           </nav>
@@ -33,8 +34,8 @@ const App = () => {
             <Route path="/react-redux-ts-crud">
               <ReactReduxTypeScriptCrud />
             </Route>
-            <Route path="/dashboard">
-              <Dashboard />
+            <Route path="/formik">
+              <FormikEntryPoint />
             </Route>
           </Switch>
         </main>
@@ -42,13 +43,5 @@ const App = () => {
     </div>
   );
 };
-
-function Dashboard() {
-  return (
-    <div>
-      <h2>Dashboard</h2>
-    </div>
-  );
-}
 
 export default App;
