@@ -7,6 +7,8 @@ import "./styles-custom.css";
 import Overview from "./overview";
 import Tuto from "./tuto";
 import Basic from "./basic";
+import Validation from "./validation";
+import VisitedField from "./visited-fields";
 
 const routes = [
   {
@@ -26,14 +28,14 @@ const routes = [
     main: () => <Basic />
   },
   {
-    path: "/a",
+    path: "/validation",
     sidebar: () => <></>,
-    main: () => <h2>Shoelaces</h2>
+    main: () => <Validation />
   },
   {
-    path: "/b",
+    path: "/visitedfield",
     sidebar: () => <></>,
-    main: () => <h2>Shoelaces</h2>
+    main: () => <VisitedField />
   },
   {
     path: "/c",
@@ -71,6 +73,16 @@ export default function FormikEntryPoint() {
             <li>
               <Link to="/thebasic" className="w3-bar-item w3-button">
                 The Basics
+              </Link>
+            </li>
+            <li>
+              <Link to="/validation" className="w3-bar-item w3-button">
+                Validation
+              </Link>
+            </li>
+            <li>
+              <Link to="/visitedfield" className="w3-bar-item w3-button">
+                Visited Field Validation
               </Link>
             </li>
           </ul>

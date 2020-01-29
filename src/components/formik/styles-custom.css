@@ -633,8 +633,9 @@ input[type="text"],
 input[type="number"],
 textarea,
 select {
-  width: 400px;
+  width: 100%;
   margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 label {
