@@ -9,22 +9,12 @@ const Overview = () => {
       have a significant performance cost associated with them. Formik is a
       small library that helps you with the 3 most annoying parts:
       <ul>
-        <li>Getting values in and out of form state</li>
-        <li>Validation and error messages</li>
-        <li>Handling form submissio</li>
+        <li>npm install yup --save</li>
+        <li>yarn add yup</li>
       </ul>
-      <h3 style={{ fontWeight: "bold", color: "red" }}>Influences</h3>
-      Formik started by expanding on this little higher order component by Brent
-      Jackson, some naming conventions from Redux-Form, and (most recently) the
-      render props <br />
-      approach popularized by React-Motion and React-Router 4. Whether you have
-      used any of the above or not, Formik only takes a few minutes to get
-      started with.
-      <br />
-      <h3 style={{ fontWeight: "bold", color: "red" }}>Installation</h3> <br />
-      <span style={{ fontWeight: "bold" }}>NPM</span>npm install formik --save{" "}
-      <br />
-      <span style={{ fontWeight: "bold" }}>YARN</span>yarn add formik
+      <h3 style={{ fontWeight: "bold", color: "red" }}>How it's work</h3>
+      To see how Yup works, let's get rid of our custom validation function
+      validate and re-write our validation with Yup and validationSchema:
       <br />
     </div>
   );

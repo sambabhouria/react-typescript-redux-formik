@@ -9,6 +9,8 @@ import Tuto from "./tuto";
 import Basic from "./basic";
 import Validation from "./validation";
 import VisitedField from "./visited-fields";
+import SchemaValidationWithYoup from "./schema -validation-with-yup";
+import LivingReactContext from "./living-react-context";
 
 const routes = [
   {
@@ -38,16 +40,21 @@ const routes = [
     main: () => <VisitedField />
   },
   {
-    path: "/c",
+    path: "/formikvalidationwithyup",
     sidebar: () => <></>,
-    main: () => <h2>Shoelaces</h2>
+    main: () => <SchemaValidationWithYoup />
+  },
+  {
+    path: "/livingreactcontext",
+    sidebar: () => <></>,
+    main: () => <LivingReactContext />
   }
 ];
 
 export default function FormikEntryPoint() {
   return (
     <Router>
-      <div>
+      <div style={{ fontSize: "small" }}>
         <div
           className="w3-sidebar w3-bar-block w3-card w3-animate-left"
           style={{ display: "none" }}
@@ -83,6 +90,20 @@ export default function FormikEntryPoint() {
             <li>
               <Link to="/visitedfield" className="w3-bar-item w3-button">
                 Visited Field Validation
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="/formikvalidationwithyup"
+                className="w3-bar-item w3-button"
+              >
+                Formki Validation With Youp
+              </Link>
+            </li>
+            <li>
+              <Link to="/livingreactcontext" className="w3-bar-item w3-button">
+                Leveraging React Context
               </Link>
             </li>
           </ul>

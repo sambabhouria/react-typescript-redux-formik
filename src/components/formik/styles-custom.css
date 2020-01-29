@@ -628,6 +628,7 @@ button[type="reset"]:hover {
   background-color: var(--gray-400);
 }
 
+input,
 input[type="email"],
 input[type="text"],
 input[type="number"],
