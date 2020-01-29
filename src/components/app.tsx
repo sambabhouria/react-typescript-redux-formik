@@ -15,11 +15,12 @@ const App = () => {
           <nav>
             <ul>
               <li>
-                <Link to="/">To-Do-App</Link>
+                <Link to="/">react-redux-typescript-crud</Link>
               </li>
               <li>
-                <Link to="/react-redux-ts-crud">react-redux-ts-crud</Link>
+                <Link to="/add-todo">To-Do-App</Link>
               </li>
+
               <li>
                 <Link to="/formik">Formik</Link>
               </li>
@@ -29,10 +30,10 @@ const App = () => {
         <main>
           <Switch>
             <Route exact path="/">
-              <TodoAppEntryPoint />
-            </Route>
-            <Route path="/react-redux-ts-crud">
               <ReactReduxTypeScriptCrud />
+            </Route>
+            <Route path="/add-todo">
+              <TodoAppEntryPoint />
             </Route>
             <Route path="/formik">
               <FormikEntryPoint />
