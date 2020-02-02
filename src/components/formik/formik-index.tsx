@@ -11,6 +11,12 @@ import Validation from "./validation";
 import VisitedField from "./visited-fields";
 import SchemaValidationWithYoup from "./schema -validation-with-yup";
 import LivingReactContext from "./living-react-context";
+import ErrorMessage from "./error-message";
+import SynchronousValidation from "./synchronous-validation";
+import BuildCustomValidation from "./building-custom-inputs";
+import Formik3rdPartyInput from "./3rd-party-input";
+import RicheEditor from "./rich-editor-example";
+import CompleteForm from "./complete-formik-form";
 
 const routes = [
   {
@@ -48,6 +54,36 @@ const routes = [
     path: "/livingreactcontext",
     sidebar: () => <></>,
     main: () => <LivingReactContext />
+  },
+  {
+    path: "/error-messge",
+    sidebar: () => <></>,
+    main: () => <ErrorMessage />
+  },
+  {
+    path: "/synchronous-validation",
+    sidebar: () => <></>,
+    main: () => <SynchronousValidation />
+  },
+  {
+    path: "/build-custom-inputs",
+    sidebar: () => <></>,
+    main: () => <BuildCustomValidation />
+  },
+  {
+    path: "/3rd-party-input",
+    sidebar: () => <></>,
+    main: () => <Formik3rdPartyInput />
+  },
+  {
+    path: "/rich-editor",
+    sidebar: () => <></>,
+    main: () => <RicheEditor />
+  },
+  {
+    path: "/complete-form",
+    sidebar: () => <></>,
+    main: () => <CompleteForm />
   }
 ];
 
@@ -104,6 +140,40 @@ export default function FormikEntryPoint() {
             <li>
               <Link to="/livingreactcontext" className="w3-bar-item w3-button">
                 Leveraging React Context
+              </Link>
+            </li>
+            <li>
+              <Link to="/error-messge" className="w3-bar-item w3-button">
+                Error Message
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/synchronous-validation"
+                className="w3-bar-item w3-button"
+              >
+                Synchronous Validation
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/build-custom-inputs" className="w3-bar-item w3-button">
+                Building Custom Inputs
+              </Link>
+            </li>
+            <li>
+              <Link to="/3rd-party-input" className="w3-bar-item w3-button">
+                3rd Party Inputs
+              </Link>
+            </li>
+            <li>
+              <Link to="/rich-editor" className="w3-bar-item w3-button">
+                Rich Editor Form
+              </Link>
+            </li>
+            <li>
+              <Link to="/complete-form" className="w3-bar-item w3-button">
+                Complete Form
               </Link>
             </li>
           </ul>
