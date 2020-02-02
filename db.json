@@ -21,7 +21,7 @@
       "id": 79214
     },
     {
-      "title": "Gestion Projet",
+      "title": "Gestion Projets",
       "author": "Equpite test",
       "id": 21127
     }
@@ -127,5 +127,14 @@
       "category": "Milks",
       "id": 6
     }
+  ],
+  "todos": [
+    "Do the laundry",
+    "Do the dishes",
+    "Meet freind",
+    "Buy eggs",
+    "Organize office",
+    "Buy lambroghiny",
+    "Call mum"
   ]
 }

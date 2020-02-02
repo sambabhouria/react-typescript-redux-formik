@@ -15,10 +15,10 @@ const App = () => {
           <nav>
             <ul>
               <li>
-                <Link to="/">react-redux-typescript-crud</Link>
+                <Link to="/"> TypeScript React Redux CRUD</Link>
               </li>
               <li>
-                <Link to="/add-todo">To-Do-App</Link>
+                <Link to="/add-todo">TypeScript To Do App</Link>
               </li>
 
               <li>

@@ -81,20 +81,23 @@ class TodoReduxTypeScriptContainer extends React.Component<
 
     return (
       <div>
-      {todoJSX}
-      <div className="form-inline">
-        
-        <input
-          onChange={this.handleTextChange}
-          placeholder={"New To Do Here"}
-          value={this.state.todoInput}
-          className="form-control"
-          style={{width:'49%'}}
-        />
-        <button onClick={this.handleButtonClick} className="btn btn-primary" style={{width:'50%', marginLeft: '10px'}}>
-          Add To Do
-        </button>
-      </div>
+        {todoJSX}
+        <div className="form-inline">
+          <input
+            onChange={this.handleTextChange}
+            placeholder={"New To Do Here"}
+            value={this.state.todoInput}
+            className="form-control"
+            style={{ width: "49%" }}
+          />
+          <button
+            onClick={this.handleButtonClick}
+            className="btn btn-primary"
+            style={{ width: "50%", marginLeft: "10px" }}
+          >
+            Add To Do
+          </button>
+        </div>
       </div>
     );
   }
