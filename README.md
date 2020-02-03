@@ -33,5 +33,5 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-To learn Formik, check out the [React documentation](https://jaredpalmer.com/formik/docs/tutorial/).
-To learn TypeScript, check out the [React documentation](https://www.typescriptlang.org/).
+To learn Formik, check out the [Formik documentation](https://jaredpalmer.com/formik/docs/tutorial/).
+To learn TypeScript, check out the [TypeScript documentation](https://www.typescriptlang.org/).
